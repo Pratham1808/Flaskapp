@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container form-container">
+        <h1 class="mt-4">Form Submission</h1>
+        <form method="POST" action="/">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rollno">Roll No</label>
+                <input type="text" class="form-control" id="rollno" name="rollno" placeholder="Enter your roll number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="college">College Name</label>
+                <input type="text" class="form-control" id="college" name="college" placeholder="Enter your college name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course</label>
+                <input type="text" class="form-control" id="course" name="course" placeholder="Enter your course" required>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Branch</label>
+                <input type="text" class="form-control" id="branch" name="branch" placeholder="Enter your branch" required>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" id="year" name="year" placeholder="Enter your year of study" required>
+            </div>
+
+            <!-- Add more fields as needed -->
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

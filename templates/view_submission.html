@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Submission</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container form-container">
+        <h1 class="mt-4">View Submission</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" value="{{ submission.name }}" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="rollno">Roll No</label>
+                <input type="text" class="form-control" id="rollno" name="rollno" value="{{ submission.rollno }}" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="college">College Name</label>
+                <input type="text" class="form-control" id="college" name="college" value="{{ submission.college }}" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Course</label>
+                <input type="text" class="form-control" id="course" name="course" value="{{ submission.course }}" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="branch">Branch</label>
+                <input type="text" class="form-control" id="branch" name="branch" value="{{ submission.branch }}" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input type="text" class="form-control" id="year" name="year" value="{{ submission.year }}" readonly>
+            </div>
+
+            <!-- Add more fields as needed -->
+        </form>
+    </div>
+</body>
+</html>
